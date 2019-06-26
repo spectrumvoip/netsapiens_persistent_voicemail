@@ -12,6 +12,8 @@ B. Create an auto attendant:
  2. Name: Bob Voicemail PN
  3. Record a greeting and set Dial Pad Menus to "Voicemail of 300".  Greeting something like: "You have a message in your persistenmt mailbox, please press 1 to listen to the message".
  
-C. Run persistent_voicemail.php every so often.
+C. Point something so that voicemails get left in extension 300.
+
+D. Run persistent_voicemail.php every so often.
 
 The program will pull all the mailboxes with "PVM" in the Last Name, loop through them seeing if there is an unread message, and place a call to the "First Name" if the mailbox has an unread message.
